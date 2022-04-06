@@ -1,10 +1,22 @@
 #include <iostream>
-#include "Math.h"
-#include <math.h>
-#include "Helpers.h"
+#include <string>
 
-int Main()
+int main()
 {
-    int Result = Pow(3, 1,2);
-    std::cout << Result<<std::endl;
+	std::string name;
+	
+
+	std::cout << "enter your name" << "\n";
+	
+	std::cin >> name;
+
+	std::cout <<"String " << name << "\n";
+	std::cout <<"Size " << name.size() << "\n";
+	std::cout <<"FirstChar " << name[0] << "\n";
+	std::cout <<"LastChar " << name[name.size()-1] << "\n";
+
+
+	std::cin;
+	return 0;
+
 }
