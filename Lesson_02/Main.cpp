@@ -3,18 +3,13 @@
 
 int main()
 {
-	std::string name;
-	
+	std::string InputString;
+	std::cout << "Enter something" << "\n";
+	std::cin >> InputString;
 
-	std::cout << "enter your name" << "\n";
-	
-	std::cin >> name;
-
-	std::cout <<"String " << name << "\n";
-	std::cout <<"Size " << name.size() << "\n";
-	std::cout <<"FirstChar " << name[0] << "\n";
-	std::cout <<"LastChar " << name[name.size()-1] << "\n";
-
+	std::cout << "String: " << InputString << "\n";
+	std::cout << "FirstChepter: " << InputString.front() << "\n";
+	std::cout << "LastChepter: " << InputString.back() << "\n";
 
 	std::cin;
 	return 0;
